@@ -11,12 +11,14 @@ body {
     color: #ffffff;
 }
 .navbar {
+    border-style: solid;
+    border-width: 1px;
+    border-radius:10px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
     background-color: #0E245B;
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -32,8 +34,11 @@ body {
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
+.logo a:hover {
+    color: #00B7FF;
+}
 .logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .nav-links {
     display: flex;
@@ -53,4 +58,26 @@ body {
 
 .nav-links a:hover {
     color: #00B7FF;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    heigth: 1000px;
+}
+h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+p{
+    font-size: 1.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+.highlight{
+    color: #00B7FF;
+}
+.turkey {
+    color: #a80a0ad7
 }
