@@ -1,27 +1,31 @@
-body {
-    background-color: #121212;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navbar a {
-    text-decoration: none;
-    color: #ffffff;
+
+body {
+    background-color: #121212;
 }
+
+/* Base Navbar Styles (Desktop) */
 .navbar {
-    border-style: solid;
-    border-width: 1px;
-    border-radius:10px; 
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Added a subtle border color so it shows up */
+    border-radius: 10px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
     background-color: #0E245B;
     width: 100%;
+    position: sticky; /* Changed to sticky so top: 0 actually functions correctly */
     top: 0;
     z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .logo {
@@ -37,15 +41,16 @@ body {
 .logo a:hover {
     color: #00B7FF;
 }
+
 .logo:hover {
     transform: scale(1.1);
 }
+
 .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem;
     font-size: 1rem;
-    
 }
 
 .nav-links a {
@@ -59,18 +64,36 @@ body {
 .nav-links a:hover {
     color: #00B7FF;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    .nav-links {
+        gap: 1.5rem; 
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap; 
+    }
+}
 .container {
+    position:static;
+    top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    heigth: 1000px;
+    height: 700px;
 }
-h1 {
+.first-message-h1 {
     color: white;
     font-family: sans-serif;
     font-size: 3rem;
 }
-p{
+.first-message-p{
     font-size: 1.5rem;
     color: white;
     font-family: sans-serif;
@@ -80,4 +103,118 @@ p{
 }
 .turkey {
     color: #a80a0ad7
+}
+
+.contacts a{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.contacts {
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts a:hover {
+    text-decoration:underline;
+}
+.github{
+    margin: 10px;
+    width: 1.6rem;
+}
+.discord {
+    margin: 0.5rem;
+    width:1.6rem;
+}
+.gmail {
+    margin: 0.5rem;
+    width :1.6rem;
+}
+.tiktok {
+    margin: 0.5rem;
+    width :1.6rem;
+}
+.random {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.title  {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color:white;
+}
+
+
+
+
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.feedback label {
+    font-size: clamp(1rem, 3vw, 2rem);
+    
+}
+.fback h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.fback {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2rem;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #24282c;
+    width: 30%;
+    min-width: 300px;
+    max-width: 1000px;
+}
+.feedback input, 
+.feedback textarea {
+    padding: 10px;
+    
+    border: 2px solid #555; 
+    background-color: #33373b;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 8px;
+    
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.feedback textarea {
+    min-height: 100px; 
+    resize: vertical;
+}
+.feedback h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+.feedback input[type="submit"] {
+    margin-top: 20px;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+
+.socials {
+    border-style: solid;
+    border-radius: 20px;
+    padding: 0px 1rem 0px 1rem;
+    margin: 1rem;
 }
