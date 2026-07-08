@@ -5,6 +5,7 @@
 }
 
 body {
+    margin: 0px 100px 0px 100px;
     background-color: #121212;
 }
 
@@ -86,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 500px;
 }
 .first-message-h1 {
     color: white;
@@ -144,11 +145,12 @@ body {
     font-size: 1.3rem;
 }
 .title  {
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     font-size: 2rem;
     color:white;
+    font-family: sans-serif;
 }
 
 
@@ -156,6 +158,7 @@ body {
 
 
 .feedback {
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,6 +166,7 @@ body {
 }
 .feedback label {
     font-size: clamp(1rem, 3vw, 2rem);
+    font-family: sans-serif;
     
 }
 .fback h2 {
@@ -217,4 +221,32 @@ body {
     border-radius: 20px;
     padding: 0px 1rem 0px 1rem;
     margin: 1rem;
+}
+
+
+
+
+.about-text {
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    word-spacing: 5px;
+    margin: 20px;
+    width: 60%;
+    min-width: 200px;
+    max-width: 1000px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.start-img {
+    border-radius: 20px;
+    margin-left: 20px; margin-right: 50px;
+    float: left;
+}
+
+.code-img {
+    float: right;
+    border-radius: 20px;
 }
