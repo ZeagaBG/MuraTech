@@ -3,44 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MuraTech | Portfolio </title>
+        <title>MuraTech | Portfolio</title>
         <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
     <body>
-        <!--navbar-->
         <nav class="navbar">
             <div class="logo">
                 <a href="./index.html">MuraTech</a>  
             </div>
             <ul class="nav-links">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="./about.html">About Me</a>
-                </li>
-                <li>
-                    <a href="./contacts.html">Contacts</a>
-                </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="./contacts.html">Contacts</a></li>
             </ul>
         </nav>
-        <!-- TODO: EVERYTHING ELSE-->
+        
+        <div class="banner animated-title">
+            <img src="./assets/MuraTech.png" alt="Banner">
+        </div>
         <div class="big-container">
             <div class="container">
-                <div class="left">
-                    <h1 class="first-message-h1">
-                        Hello, I am <span class="highlight">Murat</span>.
-                    </h1>
-                </div>
-                <div class="right">
-                    <p class="first-message-p">15 year old <span class="turkey">Turkish</span> programmer</p>
+                <div class="hero-content">
+                    <div class="left">
+                        <h1 class="first-message-h1">Hello, I am <span class="highlight">Murat</span>.</h1>
+                    </div>
+                    <div class="right">
+                        <p class="first-message-p">15 year old <span class="turkey">Turkish</span> programmer</p>
+                    </div>
                 </div>
             </div>  
-            <button id="to-about">Learn more...</button> <!-- TODO: ADD REDIRECT TO ABOUT ME PAGE-->
+            
+            <div class="button-group">
+                <a href="./about.html" class="home-button">Learn more...</a>
+                <a href="./projects.html" class="home-button">Projects</a>
+            </div>
         </div>
-        <script src="./script.js"></script>
     </body>
 </html>

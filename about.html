@@ -7,38 +7,94 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <!--navbar-->
         <nav class="navbar">
             <div class="logo">
                 <a href="./index.html">MuraTech</a>  
             </div>
             <ul class="nav-links">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="./about.html">About Me</a>
-                </li>
-                <li>
-                    <a href="./contacts.html">Contacts</a>
-                </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="./contacts.html">Contacts</a></li>
             </ul>
         </nav>
-        <div class="title">
-            <h1>
-                About Me<hr>
-            </h1>
+
+        <div class="title animated-title">
+            <h1>About Me</h1>
         </div>
-        <img class="start-img" src="./assets/PC/IMG_20260708_110117184.jpg" width="200px"  alt="My PC">
-        <p class="about-text">Hey there! I build things for the web and beyond. 
-            On the front-end, I use HTML and CSS to craft responsive web designs. 
-            When it comes to building apps and games, I rely on Python and C# to handle
-            the logic and functionality. When I’m not writing code, I channel my love for
-            tech into building high-performance PCs.
-        </p>
-        <img class="code-img" src="/assets/PC/Екранна снимка 2026-07-08 120541.png" width="700px" alt="Code">
+
+        <section class="about-container about-content-wrapper">
+            <div class="about-block">
+                <img class="start-img" src="./assets/PC/IMG_20260708_110117184.jpg" alt="My PC">
+                <p class="about-text">
+                    Hey there! I build things for the web and beyond. 
+                    On the front-end, I use HTML and CSS to craft responsive web designs. 
+                    When it comes to building apps and games, I rely on Python and C# to handle
+                    the logic and functionality. When I’m not writing code, I channel my love for
+                    tech into building PCs.
+                </p>
+            </div>
+
+            <div class="about-skills-section">
+                <h2>My Tech Stack</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Frontend Development</h3>
+                        <p>Crafting responsive, clean, and interactive styles using HTML5 and CSS3.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Software & Logic</h3>
+                        <p>Building functional desktop apps, scripts, and games using Python and C#.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Hardware & Assembly</h3>
+                        <p>Planning and constructing PC setups from scratch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="current-focus">
+                <div class="focus-text">
+                    <h2>Current Focus</h2>
+                    <p>
+                        Right now, I am focusing on deepening my backend programming structure, 
+                        creating apps, and optimizing UIs. I love exploring 
+                        how structural code connects directly with hardware, finding a perfect balance 
+                        between clean software design and underlying hardware components.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-block project-cta-block">
+                <h2>Also check out my projects!</h2>
+                
+                <div class="project-teaser-grid">
+                    
+                    <a href="./projects.html#project1" class="teaser-card">
+                        <h3>Space Lab</h3>
+                        <p>Interactive education site about the solar system.</p>
+                        <span class="card-link-text">Read more →</span>
+                    </a>
+
+                    <a href="./projects.html#project2" class="teaser-card">
+                        <h3>News from NASA</h3>
+                        <p>News fetched from NASA with API into this site.</p>
+                        <span class="card-link-text">Read more →</span>
+                    </a>
+
+                    <a href="./projects.html#project3" class="teaser-card">
+                        <h3>CS2 Prop Replica</h3>
+                        <p>Counter-Strike 2 Bomb Prop</p>
+                        <span class="card-link-text">Read more →</span>
+                    </a>
+
+                    
+
+                </div>
+                <div class="button-group">
+                    <a href="./projects.html" class="home-button">More...</a>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

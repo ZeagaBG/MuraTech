@@ -3,4 +3,4 @@ document.getElementById("to-about").addEventListener("click", function ToAbout()
 });
 
 
-
+// pretty empty lol
