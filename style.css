@@ -406,6 +406,7 @@ body {
     transition: border-color 0.2s;
 }
 
+
 .feedback input:focus, 
 .feedback textarea:focus {
     outline: none;
@@ -413,7 +414,9 @@ body {
 }
 
 .feedback textarea {
-    min-height: 120px; 
+    height: 6rem;
+    min-height: 3rem;
+    
     resize: vertical;
 }
 
@@ -450,7 +453,7 @@ body {
 .random {
     text-align: center;
     font-size: 1.3rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
 
