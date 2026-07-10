@@ -56,7 +56,9 @@ body {
     font-weight: bolder;
 }
 
-
+.required{
+    color: #FF4D4D;
+}
 
 
 .navbar {
@@ -447,7 +449,12 @@ body {
 }
 
 
-
+.counter-container{
+    text-align: right; 
+    font-size: 0.85rem; color: #666; 
+    margin-top: -5px; 
+    margin-bottom: 15px;
+}
 
 .social-footer-wrapper {
     opacity: 0;
