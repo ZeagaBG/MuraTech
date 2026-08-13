@@ -948,7 +948,7 @@ body {
     }
 }
 
-.experience-tabs {
+.experience-tabs{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -956,7 +956,7 @@ body {
     padding: 2rem 0 4rem;
 }
 
-.experience {
+.experience{
     background-color: #1e2226;
     border: 2px solid rgba(255, 255, 255, 0.08);
     border-radius: 15px;
@@ -973,26 +973,26 @@ body {
     text-align: center;
 }
 
-.experience:hover {
+.experience:hover{
     transform: translateY(-4px);
     border-color: #00B7FF;
     background-color: rgba(0, 183, 255, 0.04);
 }
 
-.experience-img {
+.experience-img{
     border-radius: 18px;
     width: 140px;
     height: 140px;
     object-fit: cover;
 }
 
-.experience-title {
+.experience-title{
     font-weight: 800;
     font-size: 1.75rem;
     margin: 0;
 }
 
-.experience-desc {
+.experience-desc{
     margin: 0;
     font-size: 1rem;
     line-height: 1.7;
@@ -1000,7 +1000,7 @@ body {
     width: 100%;
 }
 
-.tags {
+.tags{
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
@@ -1019,7 +1019,7 @@ body {
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px){
     .experience-tabs {
         padding: 1.5rem 1rem 3rem;
         gap: 1rem;
@@ -1030,11 +1030,50 @@ body {
         max-width: 100%;
     }
 
-    .experience-title {
+    .experience-title{
         font-size: 1.5rem;
     }
 
     .experience-desc {
         font-size: 0.95rem;
     }
+}
+.bottom-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.25rem;
+}
+
+.btn-icon, .btn-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #a0a0a0;
+    text-decoration: none;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.btn-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.btn-icon:hover,
+.btn-img:hover {
+    background-color: rgba(0, 183, 255, 0.15);
+    border-color: #00B7FF;
+    color: #00B7FF;
+    transform: translateY(-1px);
 }
